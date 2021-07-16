@@ -48,7 +48,7 @@ class CustomNumberPuzzleControl extends NumberPuzzleControl {
 		}
 		
 		//Checking if the button is adjacent to the empty cell
-		if (pos+1==emptyCellId && pos%4!=0 || pos-1==emptyCellId && (pos-1)%4!=0
+		if (pos+1==emptyCellId && pos%4!=3 || pos-1==emptyCellId && pos%4!=0
 				|| pos+4 == emptyCellId || pos-4 == emptyCellId) {
 			swapButton(buttons[emptyCellId], buttonClicked);
 			emptyCellId = pos;
